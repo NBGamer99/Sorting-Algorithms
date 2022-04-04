@@ -1,6 +1,6 @@
 
 let values = [];
-var i = 0,j = 0,Arraylength = 100;
+var i = 0,j = 0,Arraylength = 20;
 
 function setup() {
   createCanvas(800, 400);
@@ -25,8 +25,8 @@ function draw() {
     i = i+1;
     }
   }else{
-    println("finneshed");
-    noLoop();
+    console.log("finneshed");
+    // noLoop();
   }
   
   for(let l = 0; l<values.length;l++){
