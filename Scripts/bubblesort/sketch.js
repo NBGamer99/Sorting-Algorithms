@@ -1,16 +1,19 @@
 
 let values = [];
-var i = 0,j = 0,Arraylength = 20;
+var i = 0,j = 0;
+// var Arraylength = parseInt(prompt("Give an array value ? (default 100)"));
+var Arraylength = 100;
+
 
 function setup() {
   createCanvas(800, 400);
   colorMode(HSB,360,200,250);
   values = new Array(Arraylength);
   for(let k = 0; k<values.length;k++){
-  values[k] = round(random(height));
+    values[k] = round(random(height));
   }
-
 }
+
 
 function draw() {
   background(255);
