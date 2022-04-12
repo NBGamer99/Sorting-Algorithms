@@ -9,9 +9,18 @@
   <body>
     <main>
       <div>
+        <input type="text" id="Input" >
+        <button onclick="ReadInput()">Update</button>
       </div>
     </main>
-    <script src="sketch.js">
+    <script src="sketch.js"></script>
+    <script>
+      var input = 100
+      function ReadInput(){
+        input = Number(document.getElementById('Input').value)
+        setup()
+      }
     </script>
+    
   </body>
 </html>
