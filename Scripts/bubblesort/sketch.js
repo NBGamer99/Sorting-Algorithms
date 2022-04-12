@@ -1,16 +1,14 @@
 
+
 let values = [];
-var i = 0,j = 0;
-var Arraylength = 200;
-
-
+var i ,j;
 function setup() {
-  createCanvas(800, 400);
-  values = new Array(Arraylength);
+  i = j = 0;
+  createCanvas(windowWidth, windowHeight);
+  values = new Array(input);
   for(let k = 0; k<values.length;k++){
     values[k] = round(random(height));
   }
-  fill(255);
 }
 
 
@@ -28,7 +26,6 @@ function draw() {
     }
   }else{
     console.log("finneshed");
-    noLoop();
   }
   
   for(let l = 0; l<values.length;l++){
@@ -45,6 +42,5 @@ function draw() {
 function swap(arr,a,b){
   var temp = arr[a];
   arr[a] = arr[b];
-  arr[b] = temp;
-  
+  arr[b] = temp; 
 }
